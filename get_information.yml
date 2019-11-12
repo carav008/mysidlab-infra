@@ -4,4 +4,8 @@
   tasks: 
     - name: Get information 
       shell: uname -a 
+      register: uname
+
+    - debug: 
+        msg: "{{ uname }}"
       
